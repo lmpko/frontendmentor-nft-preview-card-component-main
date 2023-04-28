@@ -1,0 +1,16 @@
+/* font-family: 'Outfit', sans-serif; */
+
+:root {
+    --primary-color: hsl(215, 51%, 70%);
+    --secondary-color: hsl(178, 100%, 50%);
+
+    --tertiary-color: hsl(217, 54%, 11%);
+    --fourthary-color: hsl(216, 50%, 16%);
+    --fifthary-color: hsl(215, 32%, 27%);
+    --sixth-color: hsl(0, 0%, 100%);
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--tertiary-color);
+}
