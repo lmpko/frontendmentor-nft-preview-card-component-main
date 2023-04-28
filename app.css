@@ -3,6 +3,7 @@
 :root {
     --primary-color: hsl(215, 51%, 70%);
     --secondary-color: hsl(178, 100%, 50%);
+    --secondary-color-opacity: hsla(178, 100%, 50%, 0.5);
 
     --tertiary-color: hsl(217, 54%, 11%);
     --fourthary-color: hsl(216, 50%, 16%);
@@ -13,4 +14,125 @@
 body{
     min-height: 100vh;
     background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    background-color: var(--fourthary-color);
+    margin: 15px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+}
+
+.logo{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: var(--secondary-color-opacity);
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .overlay img {
+    width: 50px; 
+    height: 50px;
+    margin: 0;
+  }
+
+main h1{
+    color: var(--sixth-color);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+main h1:hover, main h1:focus{
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+main p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.times-values{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.times-values span:first-child{
+    color: var(--secondary-color);
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+}
+
+.times-values span:nth-child(2){
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+}
+
+.times-values img{
+    padding-right:10px;
+}
+
+main hr{
+    border: none;
+    color: var(--fifthary-color);
+    background-color: var(--fifthary-color);
+    height: 1px;
+    margin: 15px 0;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.author img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--sixth-color);
+    border-radius: 50%;
+}
+
+.author span:nth-child(2){
+    color: var(--primary-color);
+    padding: 0 5px 0 15px;
+}
+
+.author span:nth-child(3){
+    color: var(--sixth-color);
+}
+
+.author span:nth-child(3):hover, .author span:nth-child(3):focus{
+    cursor: pointer;
+    color: var(--secondary-color);
 }
